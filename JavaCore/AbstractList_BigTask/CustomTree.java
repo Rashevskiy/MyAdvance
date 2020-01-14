@@ -3,7 +3,7 @@ package AbstractList_BigTask;
 import java.io.Serializable;
 import java.util.AbstractList;
 import java.lang.*;
-
+// This a tree
 public class CustomTree extends AbstractList<String>
                                 implements Cloneable, Serializable {
 
