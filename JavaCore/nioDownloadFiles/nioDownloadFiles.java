@@ -1,0 +1,38 @@
+package nioDownloadFiles;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+/*
+Загрузчик файлов
+*/
+public class nioDownloadFiles {
+
+    public static void main(String[] args) throws IOException {
+        Path passwords = downloadFile("https://yastatic.net/morda-logo/i/citylogos/yandex19-logo-ru.png",
+                Paths.get("/home/flowmaster/Projects/java/test/"));
+
+//        for (String line : Files.readAllLines(passwords)) {
+//            System.out.println(line);
+//        }
+    }
+
+    public static Path downloadFile(String urlString, Path downloadDirectory) throws IOException {
+        // implement this method
+        URL url=new URL(urlString);
+        InputStream inputStream = url.openStream();
+
+        Path tmp = Files.createTempFile("temp-",".tmp");
+        Files.copy(inputStream,tmp);
+
+        String fieName = urlString.substring(urlString.lastIndexOf("/"));
+        Path destPath=Paths.get(downloadDirectory.toString() + fieName);
+        Files.move(tmp,destPath);
+
+        return destPath;
+    }
+}
