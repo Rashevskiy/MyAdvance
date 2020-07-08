@@ -1,0 +1,112 @@
+body{
+	background: url("") no-repeat;
+	background-attachment:fixed;
+
+}
+
+
+.caption{ /* Верхний Блок с моим именем */
+	background: url("caption.jpg") no-repeat;	
+	margin:-7px;
+	height: 300px;
+	width:auto;
+font-style:italic;
+font-size:50px;
+text-align: center;
+position:relative;
+}
+.caption p { /* текст в верхнем блоке с моим именем */
+	position: relative;
+top:30%;
+}
+
+/*Главная  Обо мне Где работал Образование Хобби и блог Контакты*/
+.panel{ 
+vertical-align: bottom;
+font-size:15px;
+margin-top: 130px;
+}
+.panel p{
+	margin-left: 70px;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	transition: all .2s ease-in-out .1s;
+}
+.panel p:hover{
+    font-size:20px;
+/*	background:#2fc5ff;	*/
+	display: inline-block;
+	  font-weight:bold;
+}
+
+
+
+.spbgut{
+/*	background:gray;*/
+    background:url("spbgutEducation.jpg") no-repeat;
+    position:relative;
+/*    margin-top:150px;*/
+    margin-right:-10px;
+    margin-left:-10px;
+    height: 700px;
+    display:block;
+}
+.spbgutText{
+	color:black;
+	position:absolute;
+    top:0;
+
+	height:700px;
+	width:600px;
+	   background:#030305;
+	   opacity:.8;
+}
+h3{
+	margin-left: 10px;
+		   opacity:2;
+	text-indent: 25px;
+	font-size:27px;
+	font-variant:small-caps;
+    color:#ff2b2b;
+/*    margin-bottom: -20px;*/
+    text-shadow: 0 1px 0 gray
+}
+h4{
+	text-indent: 25px;
+	font-size:20px;
+	font-variant:small-caps;
+    color:#cf8a00;
+/*    margin-bottom: -20px;*/
+    text-shadow: 0 1px 0 gray
+}
+ul{
+	color:white;
+	font-size:20px;
+}
+/* БЛОК МИКРОЧИПА */
+
+
+
+.pkgh{
+/*	background:gray;*/
+    background:url("pkghEducation.jpg") no-repeat;
+/*    position:relative;*/
+/*    margin-top:150px;*/
+    margin-right:-10px;
+    margin-left:-10px;
+    height: 700px;
+    display:block;
+}
+.pkghText{
+	color:black;
+  float:right;
+/*	position:relative;*/
+/*    top:0;
+    right:0;*/
+
+	height:700px;
+	width:600px;
+	   background:#030305;
+	   opacity:.8;
+}

@@ -1,0 +1,212 @@
+body{
+	background: url("body.jpg") no-repeat;
+	background-attachment:fixed;
+
+}
+
+
+.caption{ /* Верхний Блок с моим именем */
+	background: url("caption.jpg") no-repeat;	
+	margin:-7px;
+	height: 300px;
+	width:auto;
+font-style:italic;
+font-size:50px;
+text-align: center;
+position:relative;
+}
+.caption p { /* текс в верхнем блоке с моим именем */
+	position: relative;
+top:30%;
+}
+/*Главная  Обо мне Где работал Образование Хобби и блог Контакты*/
+.panel{ 
+vertical-align: bottom;
+font-size:15px;
+margin-top: 130px;
+}
+.panel p{
+	margin-left: 70px;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	transition: all .2s ease-in-out .1s;
+}
+.panel p:hover{
+    font-size:20px;
+/*	background:#2fc5ff;	*/
+	display: inline-block;
+	  font-weight:bold;
+}
+
+
+/*   БЛОКИ С МОЕЙ ИСТОРИЕЙ  */
+
+.Blocks div{
+/*	font-variant:small-caps;
+	font-size:40px;
+	color:white;
+	text-indent: 100px;*/
+
+	border-bottom-right-radius:100px 100px;
+	margin-top:30px;
+	margin-left:-10px;
+	background: gray;
+	height:150px;
+	width:800px;
+	overflow:hidden;
+	position:relative;
+}
+.Blocks div:hover{
+	height:400px;
+}
+.Blocks .College{
+	background: url("college.jpg");
+	transition:.6s ease-in-out;
+}
+.Blocks .College:hover{
+	width:1192px;
+	background: url("PKGH1.jpg");
+}
+.Blocks .Military{
+	background: url("college.jpg");
+	transition:.6s ease-in-out;
+}
+.Blocks .Military:hover{
+	width:1140px;
+	background: url("Military.jpg");
+}
+.Blocks .Micro{
+	background: url("college.jpg");
+	transition:.6s ease-in-out;
+}
+.Blocks .Micro:hover{
+	width:900px;
+	background: url("Micro.jpg");
+}
+.Blocks .Zaslon{
+	background: url("college.jpg");
+	transition:.6s ease-in-out;
+}
+.Blocks .Zaslon:hover{
+	width:1006px;
+	height:500px;
+	background: url("Zaslon1.jpg");
+}
+
+
+.Blocks p{
+	margin-top:0px;
+	background: white;
+    padding-right:20px;
+	font-style:italic;
+font-size:35px;
+text-align: right;
+opacity:.7;
+   font-weight:bold;
+}
+.Blocks pre{
+border-bottom-right-radius:100px 100px;
+	color:white;
+	text-indent:40px;
+	width:1000px;
+	position:absolute;
+	bottom:0px;
+	margin-top:none;
+	margin-bottom:0px;
+	background: #007052;
+    padding-right:20px;
+	font-style:italic;
+font-size:15px;
+text-align: bottom;
+  font-weight:bold;
+}
+
+
+/* БЛОК ПОСЛЕДНИЕ ИССЛЕДОВАНИЯ */
+
+
+.caption2{ 
+	background: url("caption.jpg") no-repeat;
+	margin:-7px;
+	margin-top:130px;
+	height: 200px;
+	width:auto;
+font-style:italic;
+font-size:40px;
+text-align: center;
+position:relative;
+}
+.caption2 p { /* Последние исследования */
+position: relative;
+top:30%;
+}
+
+
+
+/*Куски новостей ПОСЛЕДНИХ ИССЛЕДОВАНИЙ*/
+.news{
+	height: 500px;
+	position:relative;
+}
+.news div{
+	vertical-align: top;
+	position:relative;
+    display:inline-block;
+    height: 150px;
+    width: 400px;
+    margin-top:50px;
+    margin-left:50px;
+    	border-radius:10px;
+    		box-shadow:0 10px 20px rgba(0,0,0,.25),
+     inset 0 2px 0 rgba(255,255,255,.4),
+   0 2px 0 rgba(0,0,0,.1), inset 0 0 20px
+    rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.news div::after{
+border-radius:10px;
+content: '';
+width:400px;
+height:150px;
+/*display:block;*/
+position:absolute;
+top:0;
+left:0;
+-webkit-transition:opacity .4s;
+background: 
+-webkit-radial-gradient(transparent,rgba(0,0,0,.7));
+}
+.news div:hover::after{
+opacity:0;
+}
+
+.news p{
+    padding-right: 8px;
+	position: absolute;
+	background: white;
+	width: 390px;
+	bottom:-30px;
+	font-style:italic;
+font-size:35px;
+text-align: right;
+opacity:.7;
+   font-weight:bold;
+
+}
+.JavaScript{
+background: url("javas.png") no-repeat;
+}
+.CSS{
+background: url("CSS.jpg") no-repeat;
+}
+.HTML{
+background: url("HTML.png") no-repeat;
+}
+.Java{
+background: url("Java.png") no-repeat;
+}
+.Cplus{
+background: url("Cplus.jpg") no-repeat;
+}
