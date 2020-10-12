@@ -1,6 +1,7 @@
 # MyAdvance
 my notes are kept here in case I forget something
 
+<hr>
 <source lang="cs">
     void Start(){
         OfferSheduler = new Sheduler(currentLevel);
